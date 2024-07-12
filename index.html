@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootsrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        body{
+            background-image: url(./img/galaxy.gif);
+        }
+
+        .yukseklik{
+            margin-top: -9px;
+        }
+
+        .flex-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            height: fit-content;
+            
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container text-center mt-5 ">
+        <h1 class="text-danger text-center mb-4">Weight Converter</h1>
+        <input class="text-center p-4 fs-4" id="kiloInput" type="text" placeholder="Enter your weight">
+        <select class="p-4 fs-4 text-center">
+            <option selected disabled>Choose your planet</option>
+            <option>Earth</option>
+            <option>Jupiter</option>
+            <option>Mars</option>
+            <option>Mercury</option>
+            <option>Moon</option>
+            <option>Neptune</option>
+            <option>Pluto</option>
+            <option>Saturn</option>
+            <option>Uranus</option>
+            <option>Venus</option>
+        </select>
+        <button id="btnHesapla" class="btn btn-primary p-4 yukseklik fs-4 ">Caluculate</button>
+    </div>
+
+    <div class="flex-container m-auto mt-4 container">
+        <div class="img-container me-4">
+            <img id="for-img">
+        </div>
+
+        <div class="content-container text-center">
+            <p id="sonuc" class="text-white m-0 fs-5">Enter your weight and select a planet.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+ 
+    <!-- External Bootsrap CDN -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- External JS -->
+     <script src="script.js"></script>
+</body>
+</html>
